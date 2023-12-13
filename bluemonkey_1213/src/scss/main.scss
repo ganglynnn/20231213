@@ -4,6 +4,35 @@
 
 @layer utilities {}
 
-body{
-    background-color: bisque;
+.logo_text{
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    color: #007cc1;
+    padding: 1px 8px;
+    background-color: white;
+
+    &:hover{
+        background-color: rgb(254, 28, 254);
+        color: white;
+    }
 }
+
+.header_btn{
+    border: 2px solid #f7b157;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #333;
+    padding: 10px 20px;
+    background-color: white;
+    text-align: center;
+    &:hover{
+        background-color: rgb(17, 0, 255);
+        color: white;
+    }
+
+}
+
