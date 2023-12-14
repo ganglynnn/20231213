@@ -4,22 +4,28 @@
 
 @layer utilities {}
 
-.logo_text{
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+    text-decoration: none;
+}
+
+.logo_text {
     border: 1px solid black;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 0.06em;
-    color: #007cc1;
+    color: #727272;
     padding: 1px 8px;
     background-color: white;
 
-    &:hover{
-        background-color: rgb(254, 28, 254);
+    &:hover {
+        background-color: rgb(244, 88, 255);
         color: white;
     }
 }
 
-.header_btn{
+.header_btn {
     border: 2px solid #f7b157;
     border-radius: 50px;
     font-size: 15px;
@@ -29,10 +35,76 @@
     padding: 10px 20px;
     background-color: white;
     text-align: center;
-    &:hover{
-        background-color: rgb(17, 0, 255);
+
+    &:hover {
+        background-color: #0effc3;
         color: white;
+    }
+
+    @media (min-width: 1200px) {
+        display: block;
     }
 
 }
 
+
+.plan_btn{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    font-size: 22px;
+    background-color: #ffdd3d;
+    border-radius: 50px;
+    border:4px solid white;
+    padding: 10px 96px;
+    display: inline-block;
+    position: relative;
+    &:hover{
+        background-color: #ffec7f;
+        border:4px solid #ffec7f;
+        color: black;
+    }
+
+    &::after{
+        content: "→";
+        position: absolute;
+        right: 10;
+        top: 8;
+    }
+ 
+}
+
+
+
+.uk-offcanvas-bar{
+    background-color: #f6f8fd;
+    a{
+    color:black;
+    &:hover{
+        color:#007cc1;
+    }
+}
+}
+
+@media (min-width:1024px) {
+    #offcanvas-flip {
+        display: block;
+        position: static;
+
+        .uk-offcanvas-bar {
+            position: static;
+            width: auto;
+            padding: 0;
+            background-color: transparent;
+
+            a {
+                color: #333;
+            }
+            .uk-offcanvas-close{
+                display: none;
+            }
+
+        }
+
+    }
+}
