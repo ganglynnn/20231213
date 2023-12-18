@@ -1,4 +1,4 @@
-<header uk-nav class="flex bg-[#f6f8fd] h-[70px] items-center px-[20px] sm:px-[30px] md:px-[40px] lg:px-[55px]">
+<header uk-nav class=" fixed w-full z-50 flex bg-[#f6f8fd] h-[70px] items-center px-[20px] sm:px-[30px] md:px-[40px] lg:px-[55px]">
 
     <a class="flex items-center gap-[10px]" href="#">
         <img class="h-[32px] " src="img/logo-teaching.png" alt="">
@@ -7,14 +7,13 @@
 
     <nav class=" uk-parent mx-auto absolute top-[70px] text-center left-0 w-full lg:relative lg:top-0 lg:w-auto">
         <a class=" absolute top-[-40px] right-[20px] "  href="#"><img src="img/icon_bars.svg " class=" lg:hidden " alt=""></a>
-        <ul class=" flex lg:!flex gap-5 flex-col lg:flex-row bg-[#f6f8fd]">
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px] text-[#007cc1]">線上開課工具</a></li>
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">功能特色</a></li>
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">功能特色</a></li>
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">方案費用</a></li>
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">客戶案例</a></li>
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">關於我們</a></li>
-            <li><a href="#" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">藍猴首頁</a></li>
+        <ul id="header_ui" uk-scrollspy-nav="closest: li; scroll: true" class=" flex lg:!flex gap-5 flex-col lg:flex-row bg-[#f6f8fd] ">
+            <li><a href="#scroll_1" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">線上開課工具</a></li>
+            <li><a href="#scroll_2" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">功能特色</a></li>
+            <li><a href="#scroll_3" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">方案費用</a></li>
+            <li><a href="#scroll_4" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">客戶案例</a></li>
+            <li><a href="#scroll_5" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">關於我們</a></li>
+            <li><a href="#scroll_6" class="justify-center font-semibold text-base hover:text-[#007cc1] py-[10px]">藍猴首頁</a></li>
         </ul>
     </nav>
     <a href="#" class="header_btn hidden ">FREE! 開通試用</a>
